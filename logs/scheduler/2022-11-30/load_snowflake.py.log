@@ -1,0 +1,48 @@
+[2022-11-30 06:48:18,009] {processor.py:163} INFO - Started process (PID=43) to work on /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:48:18,010] {processor.py:642} INFO - Processing file /opt/airflow/dags/load_snowflake.py for tasks to queue
+[2022-11-30 06:48:18,010] {logging_mixin.py:109} INFO - [2022-11-30 06:48:18,010] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:48:19,664] {logging_mixin.py:109} WARNING - /home/airflow/.local/lib/python3.7/site-packages/snowflake/connector/options.py:97 UserWarning: You have an incompatible version of 'pyarrow' installed (6.0.1), please install a version that adheres to: 'pyarrow<3.1.0,>=3.0.0; extra == "pandas"'
+[2022-11-30 06:48:21,280] {processor.py:654} INFO - DAG(s) dict_keys(['example_snowflake']) retrieved from /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:48:21,285] {logging_mixin.py:109} INFO - [2022-11-30 06:48:21,285] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-30 06:48:21,295] {logging_mixin.py:109} INFO - [2022-11-30 06:48:21,295] {dag.py:2937} INFO - Setting next_dagrun for example_snowflake to 2022-11-30T06:48:17.953125+00:00
+[2022-11-30 06:48:21,322] {processor.py:171} INFO - Processing /opt/airflow/dags/load_snowflake.py took 3.316 seconds
+[2022-11-30 06:48:51,603] {processor.py:163} INFO - Started process (PID=131) to work on /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:48:51,604] {processor.py:642} INFO - Processing file /opt/airflow/dags/load_snowflake.py for tasks to queue
+[2022-11-30 06:48:51,605] {logging_mixin.py:109} INFO - [2022-11-30 06:48:51,605] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:48:52,154] {logging_mixin.py:109} WARNING - /home/airflow/.local/lib/python3.7/site-packages/snowflake/connector/options.py:97 UserWarning: You have an incompatible version of 'pyarrow' installed (6.0.1), please install a version that adheres to: 'pyarrow<3.1.0,>=3.0.0; extra == "pandas"'
+[2022-11-30 06:48:52,367] {processor.py:654} INFO - DAG(s) dict_keys(['example_snowflake']) retrieved from /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:48:52,373] {logging_mixin.py:109} INFO - [2022-11-30 06:48:52,373] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-30 06:48:52,383] {logging_mixin.py:109} INFO - [2022-11-30 06:48:52,383] {dag.py:2937} INFO - Setting next_dagrun for example_snowflake to 2022-11-30T06:48:29.063444+00:00
+[2022-11-30 06:48:52,392] {processor.py:171} INFO - Processing /opt/airflow/dags/load_snowflake.py took 0.792 seconds
+[2022-11-30 06:49:22,498] {processor.py:163} INFO - Started process (PID=198) to work on /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:49:22,510] {processor.py:642} INFO - Processing file /opt/airflow/dags/load_snowflake.py for tasks to queue
+[2022-11-30 06:49:22,510] {logging_mixin.py:109} INFO - [2022-11-30 06:49:22,510] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:49:23,103] {logging_mixin.py:109} WARNING - /home/airflow/.local/lib/python3.7/site-packages/snowflake/connector/options.py:97 UserWarning: You have an incompatible version of 'pyarrow' installed (6.0.1), please install a version that adheres to: 'pyarrow<3.1.0,>=3.0.0; extra == "pandas"'
+[2022-11-30 06:49:23,355] {processor.py:654} INFO - DAG(s) dict_keys(['example_snowflake']) retrieved from /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:49:23,361] {logging_mixin.py:109} INFO - [2022-11-30 06:49:23,361] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-30 06:49:23,376] {logging_mixin.py:109} INFO - [2022-11-30 06:49:23,376] {dag.py:2937} INFO - Setting next_dagrun for example_snowflake to 2022-11-30T06:48:29.063444+00:00
+[2022-11-30 06:49:23,434] {processor.py:171} INFO - Processing /opt/airflow/dags/load_snowflake.py took 0.938 seconds
+[2022-11-30 06:49:53,657] {processor.py:163} INFO - Started process (PID=275) to work on /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:49:53,658] {processor.py:642} INFO - Processing file /opt/airflow/dags/load_snowflake.py for tasks to queue
+[2022-11-30 06:49:53,659] {logging_mixin.py:109} INFO - [2022-11-30 06:49:53,658] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:49:54,253] {logging_mixin.py:109} WARNING - /home/airflow/.local/lib/python3.7/site-packages/snowflake/connector/options.py:97 UserWarning: You have an incompatible version of 'pyarrow' installed (6.0.1), please install a version that adheres to: 'pyarrow<3.1.0,>=3.0.0; extra == "pandas"'
+[2022-11-30 06:49:54,521] {processor.py:654} INFO - DAG(s) dict_keys(['example_snowflake']) retrieved from /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:49:54,526] {logging_mixin.py:109} INFO - [2022-11-30 06:49:54,526] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-30 06:49:54,537] {logging_mixin.py:109} INFO - [2022-11-30 06:49:54,537] {dag.py:2937} INFO - Setting next_dagrun for example_snowflake to 2022-11-30T06:48:29.063444+00:00
+[2022-11-30 06:49:54,546] {processor.py:171} INFO - Processing /opt/airflow/dags/load_snowflake.py took 0.893 seconds
+[2022-11-30 06:50:24,728] {processor.py:163} INFO - Started process (PID=336) to work on /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:50:24,729] {processor.py:642} INFO - Processing file /opt/airflow/dags/load_snowflake.py for tasks to queue
+[2022-11-30 06:50:24,729] {logging_mixin.py:109} INFO - [2022-11-30 06:50:24,729] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:50:25,239] {logging_mixin.py:109} WARNING - /home/airflow/.local/lib/python3.7/site-packages/snowflake/connector/options.py:97 UserWarning: You have an incompatible version of 'pyarrow' installed (6.0.1), please install a version that adheres to: 'pyarrow<3.1.0,>=3.0.0; extra == "pandas"'
+[2022-11-30 06:50:25,457] {processor.py:654} INFO - DAG(s) dict_keys(['example_snowflake']) retrieved from /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:50:25,462] {logging_mixin.py:109} INFO - [2022-11-30 06:50:25,462] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-30 06:50:25,472] {logging_mixin.py:109} INFO - [2022-11-30 06:50:25,472] {dag.py:2937} INFO - Setting next_dagrun for example_snowflake to 2022-11-30T06:48:29.063444+00:00
+[2022-11-30 06:50:25,485] {processor.py:171} INFO - Processing /opt/airflow/dags/load_snowflake.py took 0.759 seconds
+[2022-11-30 06:50:55,734] {processor.py:163} INFO - Started process (PID=415) to work on /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:50:55,735] {processor.py:642} INFO - Processing file /opt/airflow/dags/load_snowflake.py for tasks to queue
+[2022-11-30 06:50:55,735] {logging_mixin.py:109} INFO - [2022-11-30 06:50:55,735] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:50:56,206] {logging_mixin.py:109} WARNING - /home/airflow/.local/lib/python3.7/site-packages/snowflake/connector/options.py:97 UserWarning: You have an incompatible version of 'pyarrow' installed (6.0.1), please install a version that adheres to: 'pyarrow<3.1.0,>=3.0.0; extra == "pandas"'
+[2022-11-30 06:50:56,409] {processor.py:654} INFO - DAG(s) dict_keys(['example_snowflake']) retrieved from /opt/airflow/dags/load_snowflake.py
+[2022-11-30 06:50:56,414] {logging_mixin.py:109} INFO - [2022-11-30 06:50:56,414] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-30 06:50:56,423] {logging_mixin.py:109} INFO - [2022-11-30 06:50:56,423] {dag.py:2937} INFO - Setting next_dagrun for example_snowflake to 2022-11-30T06:48:29.063444+00:00
+[2022-11-30 06:50:56,631] {processor.py:171} INFO - Processing /opt/airflow/dags/load_snowflake.py took 0.900 seconds

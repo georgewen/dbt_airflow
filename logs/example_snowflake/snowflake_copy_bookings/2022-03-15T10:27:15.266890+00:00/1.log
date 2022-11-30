@@ -1,0 +1,44 @@
+[2022-03-15 10:27:16,603] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: example_snowflake.snowflake_copy_bookings manual__2022-03-15T10:27:15.266890+00:00 [queued]>
+[2022-03-15 10:27:16,611] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: example_snowflake.snowflake_copy_bookings manual__2022-03-15T10:27:15.266890+00:00 [queued]>
+[2022-03-15 10:27:16,611] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 10:27:16,611] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 10:27:16,611] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 10:27:16,627] {taskinstance.py:1264} INFO - Executing <Task(SnowflakeOperator): snowflake_copy_bookings> on 2022-03-15 10:27:15.266890+00:00
+[2022-03-15 10:27:16,632] {standard_task_runner.py:52} INFO - Started process 443 to run task
+[2022-03-15 10:27:16,634] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'example_snowflake', 'snowflake_copy_bookings', 'manual__2022-03-15T10:27:15.266890+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/load_snowflake.py', '--cfg-path', '/tmp/tmpq2jniyjr', '--error-file', '/tmp/tmpw7pvzh64']
+[2022-03-15 10:27:16,635] {standard_task_runner.py:77} INFO - Job 62: Subtask snowflake_copy_bookings
+[2022-03-15 10:27:16,680] {logging_mixin.py:109} INFO - Running <TaskInstance: example_snowflake.snowflake_copy_bookings manual__2022-03-15T10:27:15.266890+00:00 [running]> on host dd3c58b082a3
+[2022-03-15 10:27:16,731] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_snowflake
+AIRFLOW_CTX_TASK_ID=snowflake_copy_bookings
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T10:27:15.266890+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-03-15T10:27:15.266890+00:00
+[2022-03-15 10:27:16,732] {snowflake.py:127} INFO - Executing: copy into PUBLIC.BOOKINGS_1 from s3://gw-test-open-snowflake/***/ FILES=('bookings_1.csv') FILE_FORMAT=(TYPE='CSV' SKIP_HEADER=1);copy into PUBLIC.BOOKINGS_2 from s3://gw-test-open-snowflake/***/ FILES=('bookings_2.csv') FILE_FORMAT=(TYPE='CSV' SKIP_HEADER=1);
+[2022-03-15 10:27:16,739] {base.py:79} INFO - Using connection to: id: snowflake_conn. Host: ms36734.ap-southeast-2.snowflakecomputing.com, Port: None, Schema: public, Login: ggww128, Password: ***, extra: {'extra__snowflake__account': 'ms36734', 'extra__snowflake__database': 'DEMO_DBT', 'extra__snowflake__insecure_mode': False, 'extra__snowflake__region': 'ap-southeast-2', 'extra__snowflake__role': 'dbt_DEV_ROLE', 'extra__snowflake__warehouse': 'dbt_DEV_WH'}
+[2022-03-15 10:27:16,739] {connection.py:262} INFO - Snowflake Connector for Python Version: 2.4.6, Python Version: 3.7.12, Platform: Linux-5.13.0-25-generic-x86_64-with-debian-10.11
+[2022-03-15 10:27:16,740] {connection.py:869} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2022-03-15 10:27:16,740] {connection.py:886} INFO - Setting use_openssl_only mode to False
+[2022-03-15 10:27:17,381] {cursor.py:637} INFO - query: [ALTER SESSION SET autocommit=True]
+[2022-03-15 10:27:17,446] {cursor.py:661} INFO - query execution done
+[2022-03-15 10:27:17,446] {snowflake.py:283} INFO - Running statement: copy into PUBLIC.BOOKINGS_1 from s3://gw-test-open-snowflake/***/ FILES=('bookings_1.csv') FILE_FORMAT=(TYPE='CSV' SKIP_HEADER=1);, parameters: None
+[2022-03-15 10:27:17,447] {cursor.py:637} INFO - query: [copy into PUBLIC.BOOKINGS_1 from s3://gw-test-open-snowflake/***/ FILES=('bo...]
+[2022-03-15 10:27:18,036] {cursor.py:661} INFO - query execution done
+[2022-03-15 10:27:18,036] {snowflake.py:291} INFO - Statement execution info - {'file': 's3://gw-test-open-snowflake/***/bookings_1.csv', 'status': 'LOADED', 'rows_parsed': 7, 'rows_loaded': 7, 'error_limit': 1, 'errors_seen': 0, 'first_error': None, 'first_error_line': None, 'first_error_character': None, 'first_error_column_name': None}
+[2022-03-15 10:27:18,036] {json_result.py:127} INFO - fetching data done
+[2022-03-15 10:27:18,036] {snowflake.py:294} INFO - Rows affected: 1
+[2022-03-15 10:27:18,037] {snowflake.py:295} INFO - Snowflake query id: 01a2f0b3-3200-c8ea-0000-0000aa29357d
+[2022-03-15 10:27:18,037] {snowflake.py:283} INFO - Running statement: copy into PUBLIC.BOOKINGS_2 from s3://gw-test-open-snowflake/***/ FILES=('bookings_2.csv') FILE_FORMAT=(TYPE='CSV' SKIP_HEADER=1);, parameters: None
+[2022-03-15 10:27:18,037] {cursor.py:637} INFO - query: [copy into PUBLIC.BOOKINGS_2 from s3://gw-test-open-snowflake/***/ FILES=('bo...]
+[2022-03-15 10:27:18,714] {cursor.py:661} INFO - query execution done
+[2022-03-15 10:27:18,714] {snowflake.py:291} INFO - Statement execution info - {'file': 's3://gw-test-open-snowflake/***/bookings_2.csv', 'status': 'LOADED', 'rows_parsed': 7, 'rows_loaded': 7, 'error_limit': 1, 'errors_seen': 0, 'first_error': None, 'first_error_line': None, 'first_error_character': None, 'first_error_column_name': None}
+[2022-03-15 10:27:18,714] {json_result.py:127} INFO - fetching data done
+[2022-03-15 10:27:18,715] {snowflake.py:294} INFO - Rows affected: 1
+[2022-03-15 10:27:18,715] {snowflake.py:295} INFO - Snowflake query id: 01a2f0b3-3200-c962-0000-0000aa295051
+[2022-03-15 10:27:18,715] {connection.py:499} INFO - closed
+[2022-03-15 10:27:18,733] {connection.py:502} INFO - No async queries seem to be running, deleting session
+[2022-03-15 10:27:18,814] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=example_snowflake, task_id=snowflake_copy_bookings, execution_date=20220315T102715, start_date=20220315T102716, end_date=20220315T102718
+[2022-03-15 10:27:18,850] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-15 10:27:18,875] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

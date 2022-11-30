@@ -1,0 +1,42 @@
+[2022-11-30 06:48:18,004] {processor.py:163} INFO - Started process (PID=42) to work on /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:48:18,005] {processor.py:642} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2022-11-30 06:48:18,006] {logging_mixin.py:109} INFO - [2022-11-30 06:48:18,006] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:48:18,054] {processor.py:654} INFO - DAG(s) dict_keys(['2_daily_transformation_analysis']) retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:48:18,060] {logging_mixin.py:109} INFO - [2022-11-30 06:48:18,060] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-30 06:48:18,097] {logging_mixin.py:109} INFO - [2022-11-30 06:48:18,097] {dag.py:2937} INFO - Setting next_dagrun for 2_daily_transformation_analysis to None
+[2022-11-30 06:48:18,121] {processor.py:171} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.119 seconds
+[2022-11-30 06:48:48,471] {processor.py:163} INFO - Started process (PID=105) to work on /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:48:48,475] {processor.py:642} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2022-11-30 06:48:48,476] {logging_mixin.py:109} INFO - [2022-11-30 06:48:48,476] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:48:48,511] {processor.py:654} INFO - DAG(s) dict_keys(['2_daily_transformation_analysis']) retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:48:48,521] {logging_mixin.py:109} INFO - [2022-11-30 06:48:48,520] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-30 06:48:48,537] {logging_mixin.py:109} INFO - [2022-11-30 06:48:48,537] {dag.py:2937} INFO - Setting next_dagrun for 2_daily_transformation_analysis to None
+[2022-11-30 06:48:48,563] {processor.py:171} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.095 seconds
+[2022-11-30 06:49:18,953] {processor.py:163} INFO - Started process (PID=177) to work on /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:49:18,977] {processor.py:642} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2022-11-30 06:49:18,977] {logging_mixin.py:109} INFO - [2022-11-30 06:49:18,977] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:49:19,003] {processor.py:654} INFO - DAG(s) dict_keys(['2_daily_transformation_analysis']) retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:49:19,012] {logging_mixin.py:109} INFO - [2022-11-30 06:49:19,012] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-30 06:49:19,029] {logging_mixin.py:109} INFO - [2022-11-30 06:49:19,029] {dag.py:2937} INFO - Setting next_dagrun for 2_daily_transformation_analysis to None
+[2022-11-30 06:49:19,055] {processor.py:171} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.106 seconds
+[2022-11-30 06:49:49,132] {processor.py:163} INFO - Started process (PID=243) to work on /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:49:49,140] {processor.py:642} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2022-11-30 06:49:49,140] {logging_mixin.py:109} INFO - [2022-11-30 06:49:49,140] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:49:49,168] {processor.py:654} INFO - DAG(s) dict_keys(['2_daily_transformation_analysis']) retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:49:49,174] {logging_mixin.py:109} INFO - [2022-11-30 06:49:49,174] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-30 06:49:49,190] {logging_mixin.py:109} INFO - [2022-11-30 06:49:49,190] {dag.py:2937} INFO - Setting next_dagrun for 2_daily_transformation_analysis to None
+[2022-11-30 06:49:49,210] {processor.py:171} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.081 seconds
+[2022-11-30 06:50:19,697] {processor.py:163} INFO - Started process (PID=314) to work on /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:50:19,697] {processor.py:642} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2022-11-30 06:50:19,698] {logging_mixin.py:109} INFO - [2022-11-30 06:50:19,698] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:50:19,725] {processor.py:654} INFO - DAG(s) dict_keys(['2_daily_transformation_analysis']) retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:50:19,735] {logging_mixin.py:109} INFO - [2022-11-30 06:50:19,735] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-30 06:50:19,748] {logging_mixin.py:109} INFO - [2022-11-30 06:50:19,748] {dag.py:2937} INFO - Setting next_dagrun for 2_daily_transformation_analysis to None
+[2022-11-30 06:50:19,760] {processor.py:171} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.066 seconds
+[2022-11-30 06:50:49,857] {processor.py:163} INFO - Started process (PID=378) to work on /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:50:49,858] {processor.py:642} INFO - Processing file /opt/airflow/dags/transform_and_analysis.py for tasks to queue
+[2022-11-30 06:50:49,858] {logging_mixin.py:109} INFO - [2022-11-30 06:50:49,858] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:50:49,882] {processor.py:654} INFO - DAG(s) dict_keys(['2_daily_transformation_analysis']) retrieved from /opt/airflow/dags/transform_and_analysis.py
+[2022-11-30 06:50:49,890] {logging_mixin.py:109} INFO - [2022-11-30 06:50:49,890] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-30 06:50:49,905] {logging_mixin.py:109} INFO - [2022-11-30 06:50:49,905] {dag.py:2937} INFO - Setting next_dagrun for 2_daily_transformation_analysis to None
+[2022-11-30 06:50:49,918] {processor.py:171} INFO - Processing /opt/airflow/dags/transform_and_analysis.py took 0.064 seconds

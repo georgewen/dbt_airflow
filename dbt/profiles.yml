@@ -1,0 +1,13 @@
+dbt:
+  outputs:
+    dev:
+      account: ms36734.ap-southeast-2
+      database: DEMO_DBT
+      password: Smecnet121!
+      role: dbt_DEV_ROLE
+      schema: public
+      threads: 200
+      type: snowflake
+      user: ggww128
+      warehouse: dbt_DEV_WH
+  target: dev

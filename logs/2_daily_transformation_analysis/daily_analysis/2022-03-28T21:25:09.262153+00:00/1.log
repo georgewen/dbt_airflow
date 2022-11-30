@@ -1,0 +1,41 @@
+[2022-03-28 21:25:24,444] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: 2_daily_transformation_analysis.daily_analysis manual__2022-03-28T21:25:09.262153+00:00 [queued]>
+[2022-03-28 21:25:24,453] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: 2_daily_transformation_analysis.daily_analysis manual__2022-03-28T21:25:09.262153+00:00 [queued]>
+[2022-03-28 21:25:24,453] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-28 21:25:24,454] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-28 21:25:24,454] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-28 21:25:24,485] {taskinstance.py:1264} INFO - Executing <Task(BashOperator): daily_analysis> on 2022-03-28 21:25:09.262153+00:00
+[2022-03-28 21:25:24,489] {standard_task_runner.py:52} INFO - Started process 856 to run task
+[2022-03-28 21:25:24,491] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', '2_daily_transformation_analysis', 'daily_analysis', 'manual__2022-03-28T21:25:09.262153+00:00', '--job-id', '74', '--raw', '--subdir', 'DAGS_FOLDER/transform_and_analysis.py', '--cfg-path', '/tmp/tmp5bl0hyti', '--error-file', '/tmp/tmpzjy7862v']
+[2022-03-28 21:25:24,492] {standard_task_runner.py:77} INFO - Job 74: Subtask daily_analysis
+[2022-03-28 21:25:24,553] {logging_mixin.py:109} INFO - Running <TaskInstance: 2_daily_transformation_analysis.daily_analysis manual__2022-03-28T21:25:09.262153+00:00 [running]> on host 713dce2392ed
+[2022-03-28 21:25:24,653] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=2_daily_transformation_analysis
+AIRFLOW_CTX_TASK_ID=daily_analysis
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-28T21:25:09.262153+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-03-28T21:25:09.262153+00:00
+[2022-03-28 21:25:24,654] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-03-28 21:25:24,654] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'cd /dbt && dbt run --models analysis --profiles-dir .']
+[2022-03-28 21:25:24,663] {subprocess.py:85} INFO - Output:
+[2022-03-28 21:25:27,424] {subprocess.py:89} INFO - Running with dbt=0.20.0
+[2022-03-28 21:25:30,017] {subprocess.py:89} INFO - Found 5 models, 0 tests, 0 snapshots, 0 analyses, 338 macros, 0 operations, 3 seed files, 0 sources, 0 exposures
+[2022-03-28 21:25:30,018] {subprocess.py:89} INFO - 
+[2022-03-28 21:25:32,278] {subprocess.py:89} INFO - 21:25:32 | Concurrency: 200 threads (target='dev')
+[2022-03-28 21:25:32,278] {subprocess.py:89} INFO - 21:25:32 |
+[2022-03-28 21:25:32,297] {subprocess.py:89} INFO - 21:25:32 | 1 of 2 START view model analysis.hotel_count_by_day.................. [RUN]
+[2022-03-28 21:25:32,297] {subprocess.py:89} INFO - 21:25:32 | 2 of 2 START view model analysis.thirty_day_avg_cost................. [RUN]
+[2022-03-28 21:25:33,584] {subprocess.py:89} INFO - 21:25:33 | 1 of 2 OK created view model analysis.hotel_count_by_day............. [[32mSUCCESS 1[0m in 1.29s]
+[2022-03-28 21:25:33,614] {subprocess.py:89} INFO - 21:25:33 | 2 of 2 OK created view model analysis.thirty_day_avg_cost............ [[32mSUCCESS 1[0m in 1.32s]
+[2022-03-28 21:25:34,233] {subprocess.py:89} INFO - 21:25:34 |
+[2022-03-28 21:25:34,234] {subprocess.py:89} INFO - 21:25:34 | Finished running 2 view models in 4.21s.
+[2022-03-28 21:25:34,247] {subprocess.py:89} INFO - 
+[2022-03-28 21:25:34,248] {subprocess.py:89} INFO - [32mCompleted successfully[0m
+[2022-03-28 21:25:34,248] {subprocess.py:89} INFO - 
+[2022-03-28 21:25:34,248] {subprocess.py:89} INFO - Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[2022-03-28 21:25:35,378] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-03-28 21:25:35,412] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=2_daily_transformation_analysis, task_id=daily_analysis, execution_date=20220328T212509, start_date=20220328T212524, end_date=20220328T212535
+[2022-03-28 21:25:35,465] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-28 21:25:35,494] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
