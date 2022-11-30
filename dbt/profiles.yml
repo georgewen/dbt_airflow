@@ -10,4 +10,11 @@ dbt:
       type: snowflake
       user: ggww128
       warehouse: dbt_DEV_WH
-  target: dev
+    staging:
+      host: adb-143677883514282.2.azuredatabricks.net
+      http_path: /sql/1.0/warehouses/b3ec78ec065481d2
+      schema: default
+      threads: 4
+      token: dapi52880c9ebf01473a1c26e5f7f7a3b4eb
+      type: databricks
+  target: staging
