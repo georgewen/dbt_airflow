@@ -1,0 +1,75 @@
+[2022-12-02 09:15:08,422] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: 2_daily_transformation_analysis.daily_transform manual__2022-12-02T09:15:07.228914+00:00 [queued]>
+[2022-12-02 09:15:08,428] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: 2_daily_transformation_analysis.daily_transform manual__2022-12-02T09:15:07.228914+00:00 [queued]>
+[2022-12-02 09:15:08,428] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-02 09:15:08,428] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-12-02 09:15:08,428] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-02 09:15:08,442] {taskinstance.py:1264} INFO - Executing <Task(BashOperator): daily_transform> on 2022-12-02 09:15:07.228914+00:00
+[2022-12-02 09:15:08,446] {standard_task_runner.py:52} INFO - Started process 245 to run task
+[2022-12-02 09:15:08,448] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', '2_daily_transformation_analysis', 'daily_transform', 'manual__2022-12-02T09:15:07.228914+00:00', '--job-id', '109', '--raw', '--subdir', 'DAGS_FOLDER/transform_and_analysis.py', '--cfg-path', '/tmp/tmpt3avaucc', '--error-file', '/tmp/tmp29r2rbp2']
+[2022-12-02 09:15:08,448] {standard_task_runner.py:77} INFO - Job 109: Subtask daily_transform
+[2022-12-02 09:15:08,492] {logging_mixin.py:109} INFO - Running <TaskInstance: 2_daily_transformation_analysis.daily_transform manual__2022-12-02T09:15:07.228914+00:00 [running]> on host cb8b9ecbc5ce
+[2022-12-02 09:15:08,567] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=2_daily_transformation_analysis
+AIRFLOW_CTX_TASK_ID=daily_transform
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-02T09:15:07.228914+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-02T09:15:07.228914+00:00
+[2022-12-02 09:15:08,567] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-02 09:15:08,568] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'cd /dbt && dbt run --models transform --profiles-dir .']
+[2022-12-02 09:15:08,577] {subprocess.py:85} INFO - Output:
+[2022-12-02 09:15:11,253] {subprocess.py:89} INFO - Running with dbt=0.21.1
+[2022-12-02 09:15:12,302] {subprocess.py:89} INFO - Encountered an error:
+[2022-12-02 09:15:12,303] {subprocess.py:89} INFO - Runtime Error
+[2022-12-02 09:15:12,303] {subprocess.py:89} INFO -   Failed to read package: Runtime Error
+[2022-12-02 09:15:12,303] {subprocess.py:89} INFO -     This version of dbt is not supported with the 'dbt_utils' package.
+[2022-12-02 09:15:12,303] {subprocess.py:89} INFO -       Installed version of dbt: =0.21.1
+[2022-12-02 09:15:12,303] {subprocess.py:89} INFO -       Required version of dbt for 'dbt_utils': ['>=0.20.0', '<0.21.0']
+[2022-12-02 09:15:12,303] {subprocess.py:89} INFO -     Check the requirements for the 'dbt_utils' package, or run dbt again with --no-version-check
+[2022-12-02 09:15:12,303] {subprocess.py:89} INFO - 
+[2022-12-02 09:15:12,303] {subprocess.py:89} INFO - 
+[2022-12-02 09:15:12,303] {subprocess.py:89} INFO -   Error encountered in /dbt/dbt_modules/dbt_utils/dbt_project.yml
+[2022-12-02 09:15:12,303] {subprocess.py:89} INFO - 
+[2022-12-02 09:15:12,303] {subprocess.py:89} INFO - Error encountered in /dbt/dbt_modules/dbt_utils
+[2022-12-02 09:15:12,464] {subprocess.py:93} INFO - Command exited with return code 2
+[2022-12-02 09:15:12,477] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 188, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2022-12-02 09:15:12,482] {taskinstance.py:1282} INFO - Marking task as FAILED. dag_id=2_daily_transformation_analysis, task_id=daily_transform, execution_date=20221202T091507, start_date=20221202T091508, end_date=20221202T091512
+[2022-12-02 09:15:12,500] {standard_task_runner.py:92} ERROR - Failed to execute job 109 for task daily_transform
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 188, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2022-12-02 09:15:12,519] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-12-02 09:15:12,560] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
